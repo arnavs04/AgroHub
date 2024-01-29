@@ -1,5 +1,7 @@
 Flask
 pickle
+warnings
+xgboost
 sklearn
 tensorflow
 pandas
