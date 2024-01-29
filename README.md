@@ -22,3 +22,18 @@ conda create --name myenv python=3.8
 ```bash
 conda activate myenv
 ```
+### Step 5: Installing the Packages
+
+```bash
+conda install --file requirements.txt
+```
+### Step 6: Deactivate the Environment
+
+```bash
+conda deactivate
+```
+### Step 7: Remove the Environment (Optional)
+
+```bash
+conda env remove --name myenv
+```
