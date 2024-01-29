@@ -16,9 +16,9 @@ If you don't have Conda installed, you can download and install it from the [off
 ```bash
 # Replace 'myenv' with your desired environment name and 'python=3.8' with your desired Python version
 conda create --name myenv python=3.8
-'''
-
+```
 ### Step 4: Activate the Environment
 
 ```bash
 conda activate myenv
+```
