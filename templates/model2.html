@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yield Prediction Model</title>
+</head>
+<body>
+    <h1>Yield Prediction Model</h1>
+    <form action="/model2.html" method="post">
+        <label for="crop">Crop:</label><br>
+        <input type="text" id="crop" name="crop" required><br>
+        <label for="avg_rainfall">Average Rainfall (mm):</label><br>
+        <input type="number" id="avg_rainfall" name="avg_rainfall" required><br>
+        <label for="pesticides_tonnes">Pesticides (tonnes):</label><br>
+        <input type="number" id="pesticides_tonnes" name="pesticides_tonnes" required><br>
+        <label for="avg_temp">Average Temperature (°C):</label><br>
+        <input type="number" id="avg_temp" name="avg_temp" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+    <h2>Prediction:</h2>
+    <p>The predicted yield is: {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>

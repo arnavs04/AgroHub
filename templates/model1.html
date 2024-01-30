@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation Model</title>
+</head>
+<body>
+    <h1>Crop Recommendation Model</h1>
+    <form action="/predict" method="post">
+        <label for="N">N (Ratio of Nitrogen content in soil):</label><br>
+        <input type="number" id="N" name="N" required><br>
+        <label for="P">P (Ratio of Phosphorous content in soil):</label><br>
+        <input type="number" id="P" name="P" required><br>
+        <label for="K">K (Ratio of Potassium content in soil):</label><br>
+        <input type="number" id="K" name="K" required><br>
+        <label for="temperature">Temperature (in Celsius):</label><br>
+        <input type="number" id="temperature" name="temperature" required><br>
+        <label for="humidity">Humidity (in %):</label><br>
+        <input type="number" id="humidity" name="humidity" required><br>
+        <label for="ph">pH Value of the Soil:</label><br>
+        <input type="number" id="ph" name="ph" required><br>
+        <label for="rainfall">Rainfall (in mm):</label><br>
+        <input type="number" id="rainfall" name="rainfall" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

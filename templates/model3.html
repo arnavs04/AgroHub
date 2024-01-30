@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Damage Prediction Model</title>
+</head>
+<body>
+    <h1>Crop Damage Prediction Model</h1>
+    <form action="/predict_crop_damage" method="post">
+        <label for="crop_type">Crop Type:</label><br>
+        <input type="text" id="crop_type" name="crop_type" required><br>
+        <label for="soil_type">Soil Type:</label><br>
+        <input type="text" id="soil_type" name="soil_type" required><br>
+        <label for="pesticide_category">Pesticide Category:</label><br>
+        <input type="text" id="pesticide_category" name="pesticide_category" required><br>
+        <label for="num_doses_week">Number of Doses per Week:</label><br>
+        <input type="number" id="num_doses_week" name="num_doses_week" required><br>
+        <label for="num_weeks_used">Number of Weeks Used:</label><br>
+        <input type="number" id="num_weeks_used" name="num_weeks_used" required><br>
+        <label for="num_weeks_quit">Number of Weeks Quit:</label><br>
+        <input type="number" id="num_weeks_quit" name="num_weeks_quit" required><br>
+        <label for="season">Season:</label><br>
+        <input type="text" id="season" name="season" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+    <h2>Prediction:</h2>
+    <p>The predicted crop damage is: {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
