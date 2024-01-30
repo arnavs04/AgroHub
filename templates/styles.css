@@ -1,0 +1,24 @@
+/* Set maximum width and center the carousel */
+#carouselExampleCaptions {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Set maximum height for carousel images */
+.carousel-item img {
+    height: 100vh; /* Make the image cover the entire viewport height */
+    width: 100%; /* Ensure images fill the container */
+}
+
+/* Style carousel captions */
+.carousel-caption {
+    font-size: 2em; /* Increase the font size of the captions */
+}
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply Roboto font to all text elements */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
