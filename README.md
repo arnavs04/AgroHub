@@ -1,5 +1,5 @@
-# HackSamagam
-The project of Al Coders bin Shawarma
+# AgroHub
+The project of Al Coders bin Shawarma for HackSamagam
 
 ## Creating a New Python Environment with Conda
 
