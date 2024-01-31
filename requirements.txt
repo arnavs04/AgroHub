@@ -9,3 +9,4 @@ pandas
 numpy
 matplotlib
 seaborn
+gunicorn
