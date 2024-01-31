@@ -7,6 +7,7 @@
     <title>Al coders bin shawarma</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
   </head>
   <body>
     <header class="p-3 text-bg-dark">
@@ -30,9 +31,10 @@
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <img src="shawarma" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}"  alt="Company Logo" class="d-block mx-auto img-fluid mb-3" style="max-width: 400px;">
           </div>
           <div class="col-lg-6">
+            
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Us</h1>
             <p class="lead">Welcome to Al Coders Bin Shawarma, where passion for flavor meets the art of coding. We're not just a shawarma company; we're a culinary experience infused with innovation and tradition. At Al Coders Bin Shawarma, we craft more than just delicious dishes – we create memories, moments of indulgence, and a fusion of tastes that transport you to the bustling streets of the Middle East..</p>
           </div>
