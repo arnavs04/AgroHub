@@ -1,7 +1,7 @@
 Flask
 pickle
 xgboost
-sklearn
+sklearn==1.4.0
 tensorflow
 pandas
 numpy
